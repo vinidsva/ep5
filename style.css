@@ -1,0 +1,68 @@
+body{
+    display: grid;
+    grid-template-areas: 
+    "cab cab cab"
+    "asi mai mai"
+    "foo foo foo";
+    grid-template-columns: 500px auto;
+    grid-template-rows: 100px auto 100px;
+}
+header{
+    grid-area: cab;
+    background-color: blue;
+}
+main{
+    grid-area: mai;
+    background-color: purple;
+}
+aside{
+    grid-area: asi;
+    background-color: pink;
+}
+footer{
+    grid-area: foo;
+    background-color: brown;
+}
+.elemento_pai{
+    /*     border: 2px red solid;
+     */    display: flex;
+        justify-content: center;
+        width: 1200px;
+        padding: 20px;
+        flex-wrap: wrap;
+        align-items: center;
+    }
+    .card{
+        border-radius: 10px;
+        padding: 10px;
+        width: 300px;
+        margin: 20px;
+        text-align: center;
+        box-shadow: 3px 6px 9px red;
+        transition: 0.5s;
+    }
+    .texto a{
+        display: block;
+        padding: 10px 20px;
+        background-color: black;
+        color: white;
+        border-radius: 20px;
+        text-decoration: none;
+        transition: 0.5s;
+    }
+    
+    .card:hover{
+        background-color: black;
+        color: white;
+    }
+    .card:hover a{
+        background-color: red;
+        color: black;
+    }
+    .card:hover img{
+        filter: invert(1);
+    }
+    
+    .texto a:hover{
+        background-color: red;
+    }
