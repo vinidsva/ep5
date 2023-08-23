@@ -1,0 +1,143 @@
+@import url('https://fonts.googleapis.com/css2?family=Abel&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    background-color: rgb(255, 255, 255);
+    background-image: url(fundo.jpg);
+    display: grid;
+    grid-template-areas: 
+        "cab cab cab"
+        "sec pri pri"
+        "rod rod rod";
+    grid-gap: 5px;
+    grid-template-columns: 20% auto auto;
+    grid-template-rows: auto 1000px auto;
+}
+
+header{
+    grid-area: cab;
+    display: flex;
+    justify-content: center; 
+    align-items: center; 
+}
+
+.elemento_pai{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.logo{
+    width: 115px;
+}
+
+.imgopção{
+    width: 25px;
+}
+
+header li{ 
+    padding-left: 15px; 
+    display: inline-flex; 
+}
+
+aside{
+    grid-area: sec;
+}
+
+.imgaside{
+    max-width: 100%;
+    margin-bottom: 95px;
+}
+
+main{
+    grid-area: pri;
+}
+
+footer{
+    grid-area: rod;
+    display: flex;
+    justify-content: center; 
+    align-items: center; 
+}
+
+header, aside, main, footer{
+    background-color: rgba(233, 233, 233, 0.7);
+}
+
+.card{
+    border-radius: 3px;
+    padding: 25px 40px;
+    width: 200px;
+    margin: 10px;
+    text-align: center;
+    box-shadow: 9px 9px 9px rgb(173, 173, 173);
+    background-color: rgb(221, 221, 221);
+}
+
+.card div{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+
+.imgcard{
+    max-width: 100%;
+}
+
+a{
+    text-decoration: none;
+    color: rgb(0, 0, 0);
+}
+
+#h1{
+    text-align: center;
+    font-weight: bold;
+}
+
+#h2{
+    color: black;
+    font-weight: bold;
+}
+
+#h3{
+    color: black;
+    font-size: small;
+}
+
+/*Login*/
+.login{
+    background-color: rgb(221, 221, 221);
+    box-shadow: 9px 9px 9px rgb(173, 173, 173);
+    border-radius: 3px;
+    width: 400px;
+    padding: 40px;
+}
+
+.maindologin{
+    display: flex;
+    justify-content: center; 
+    align-items: center; 
+}
+
+/*Detalhes*/
+.detalhes{
+    background-color: rgb(221, 221, 221);
+    box-shadow: 9px 9px 9px rgb(173, 173, 173);
+    border-radius: 3px;
+    width: 400px;
+    padding: 40px;
+}
+
+.maindosdetalhes{
+    display: flex;
+    justify-content: center; 
+    align-items: center; 
+}
+
+.tenisdosdetalhes{
+    max-width: 100%;
+}
