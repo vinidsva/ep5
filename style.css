@@ -1,13 +1,12 @@
-@import url('https://fonts.googleapis.com/css2?family=Abel&display=swap');
-
+/*Retira a margem e o preenchimento do site*/
 *{
     margin: 0;
     padding: 0;
 }
 
+/*Body*/
 body{
     background-color: rgb(255, 255, 255);
-    background-image: url(fundo.jpg);
     display: grid;
     grid-template-areas: 
         "cab cab cab"
@@ -18,6 +17,7 @@ body{
     grid-template-rows: auto 1000px auto;
 }
 
+/*Header*/
 header{
     grid-area: cab;
     display: flex;
@@ -25,38 +25,46 @@ header{
     align-items: center; 
 }
 
-.elemento_pai{
+/*Controla o espaço dos cards*/
+.elemento_pai{ 
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
 }
 
+/*Logo*/
 .logo{
     width: 115px;
 }
 
+/*Ícones do header*/
 .imgopção{
     width: 25px;
 }
 
+/*Lista do header*/
 header li{ 
     padding-left: 15px; 
     display: inline-flex; 
 }
 
+/*Aside*/
 aside{
     grid-area: sec;
 }
 
+/*Imagem do aside*/
 .imgaside{
     max-width: 100%;
     margin-bottom: 95px;
 }
 
+/*Main*/
 main{
     grid-area: pri;
 }
 
+/*Footer*/
 footer{
     grid-area: rod;
     display: flex;
@@ -64,10 +72,12 @@ footer{
     align-items: center; 
 }
 
+/*Altera a cor do header, aside, main e footer*/
 header, aside, main, footer{
     background-color: rgba(233, 233, 233, 0.7);
 }
 
+/*Modelo dos cards*/
 .card{
     border-radius: 3px;
     padding: 25px 40px;
@@ -78,31 +88,30 @@ header, aside, main, footer{
     background-color: rgb(221, 221, 221);
 }
 
-.card div{
-    display: flex;
-    flex-direction: column;
-    text-align: center;
-}
-
+/*Redimensiona o tamanho das imagens dos cards*/
 .imgcard{
     max-width: 100%;
 }
 
+/*Muda a cor do a href e retira o sublinhado*/
 a{
     text-decoration: none;
     color: rgb(0, 0, 0);
 }
 
+/*Alinha e estiliza o H1*/
 #h1{
     text-align: center;
     font-weight: bold;
 }
 
+/*Muda a cor e deixa o H2 em negrito*/
 #h2{
     color: black;
     font-weight: bold;
 }
 
+/*Muda a cor e deixa a fonte do H3 pequena*/
 #h3{
     color: black;
     font-size: small;
@@ -117,6 +126,7 @@ a{
     padding: 40px;
 }
 
+/*Alinha o quadro de login ao centro da página*/
 .maindologin{
     display: flex;
     justify-content: center; 
@@ -132,12 +142,14 @@ a{
     padding: 40px;
 }
 
+/*Alinha o quadro de detalhes do produto ao centro da página*/
 .maindosdetalhes{
     display: flex;
     justify-content: center; 
     align-items: center; 
 }
 
+/*Redimensiona a imagem que está na página de detalhes do produto*/
 .tenisdosdetalhes{
     max-width: 100%;
 }
